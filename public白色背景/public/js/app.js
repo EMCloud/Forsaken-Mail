@@ -83,7 +83,7 @@ $(function(){
   });
 
   socket.on('mail', function(mail) {
-    Push.create("新邮件", {
+    Push.create("新の邮件", {
       body: "邮件来自："+ mail.headers.from,
       timeout: 4000
     }); 
